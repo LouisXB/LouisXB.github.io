@@ -1,6 +1,6 @@
-## Cloud Security Analyst Project Blog
+## Cloud Security Analyst Project
 
-In this blog I'll be detailing a recent project I completed in Microsoft Azure.
+In this blog I'll be detailing a recent project I completed using Microsoft Azure.
 
 ### Tools Used: 
 Azure Sentinel (SIEM), Log Analystics wWrkspace, Azure Virtual Machine, Powershell
@@ -10,13 +10,13 @@ designed to lure and analyze unauthorized access attempts. In this blog, I'll sh
 real-time attack data, offering a fascinating glimpse into the world of digital intruders.
 
 ### Project Overview:
-The project's heartbeat was a honeypot VM in Azure, exposed to the internet to attract threat actors. This setup allowed me to record failed Remote Desktop Protocol (RDP) 
+This project's heartbeat was a honeypot VM in Azure, exposed to the internet to attract threat actors. This setup allowed me to record failed Remote Desktop Protocol (RDP) 
 login attempts, offering real insights into attack patterns. Key tools from the Microsoft Azure suite played a pivotal role, including Azure VM, Azure Sentinel, and Log 
 Analytics Workspace, along with a custom PowerShell script.
 
-### Step-by-Step Guide:
+## Step-by-Step Guide:
 
-Setting Up the Honeypot VM:
+### Setting Up the Honeypot VM:
 I initiated the project by deploying a Windows VM inside the Azure Portal. I created a username and password which I used to connect to my VM via Remote Desktop Connection. 
 Given the VMs role as a honeypot, once logged in to it, I intentionally disabled the firewall, ensuring it was completely exposed yet monitored. Having a VM that is completely 
 exposed draws in attackers from all across the globe.
@@ -45,12 +45,3 @@ and sophistication of some threat actors. This exercise underscored the importan
 ### Conclusion:
 This project was not just about building an Azure honeypot but about understanding the nature and frequency of cyberattacks in a real-world scenario. It highlighted the effectiveness 
 of Azure tools in creating virtual enviornments, capturing/logging data, and alerting on events.
-
-### Additional Resources:
-For those interested in delving deeper or replicating this project, I've included the YouTube link below. The orginal creator of this project is Josh Madakor, an instructor 
-and Cybersecurity professional
-
-Link: https://youtu.be/RoZeVbbZ0o0?si=l2gU3S7cq-zfCFql
-
-Powershell Script: https://github.com/joshmadakor1/Sentinel-Lab/blob/main/Custom_Security_Log_Exporter.ps1
-
