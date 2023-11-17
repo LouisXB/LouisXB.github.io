@@ -1,3 +1,5 @@
+## SOC Analyst Training
+
 ## Introduction:
 The field of cybersecurity is as challenging as it is rewarding, demanding a continuous pursuit of knowledge and practical skills. My journey 
 through TryHackMe's SOC Level 1 training course has been a pivotal step in this ongoing adventure. In this blog, I share my experiences, the insights
