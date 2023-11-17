@@ -1,5 +1,3 @@
-Here you can say lots of fun things about your site.
-
-Maybe say a some things about yourself.
-
-Or maybe what you plan to blog about.
+Hi my name is Louis Bruno. Im a certified Cybersecurity and Cloud professional with industry experience as a Computer Forensic Analyst.
+Here you'll find blog post about some of the projects I've personally been working on in order to accelerate and suppliment my 
+growth and learning in the field.
