@@ -51,3 +51,10 @@ For those interested in delving deeper or replicating this project, I've include
 and Cybersecurity professional
 Link: https://youtu.be/RoZeVbbZ0o0?si=l2gU3S7cq-zfCFql
 Powershell Script: https://github.com/joshmadakor1/Sentinel-Lab/blob/main/Custom_Security_Log_Exporter.ps1
+
+ ```tsql
+ SELECT *
+ FROM sys.tables
+ WHERE [name] = 'SomeTable'
+ ```
+
