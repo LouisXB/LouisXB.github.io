@@ -27,11 +27,11 @@ sample data, and appended all new failed logins below. Additionally, the Powersh
 provide the geolocations (city, longitude, latitude, etc.), adding it to the log data. This file became the cornerstone of my data collection.
 
 ### Integration with Azure Analytics Workspace:
-The VM was then integrated with Azure Log Analytics Workspace. Here, I created a custom MMA-based log, fed with the failed_rdp.log data, and provided a source path back to the failed_rdp.log 
-on the VM located at C:\ProgramData\Failed_rdp.log
+The VM was then integrated with Azure Log Analytics Workspace. Here, I created a custom MMA-based log, fed it with the failed_rdp.log data, and provided a source path back to the failed_rdp.log 
+on the VM located at C:\ProgramData\Failed_rdp.log. I named this custom log FAILED_RDP_WITH_GEO_CL and extracted raw data to make everything more digestable and easy to read.
 
 ### Leveraging Azure Sentinel:
-The next phase involved connecting the Log Analytics Workspace to Azure Sentinel. This connection was crucial for retrieving the log data from the honeypot VM, providing 
+The next phase involved connecting the VM to Azure Sentinel. This connection was crucial for retrieving the log data from the honeypot VM, providing 
 a streamlined data flow.
 
 ### Alert Rule Configuration:
@@ -39,7 +39,7 @@ In Azure Sentinel, I configured a custom incident alert rule. This rule was desi
 a common sign of intrusion attempts.
 
 ### Results and Analysis:
-The data harvested was eye-opening, seeing attacks from across the world in Singapore. The failed_rdp.log revealed varied attack patterns and techniques, highlighting the persistence 
+The data harvested was eye-opening, seeing attacks (RDP Brute Force) from across the world in Singapore. The failed_rdp.log revealed varied attack patterns and techniques, highlighting the persistence 
 and sophistication of some threat actors. This exercise underscored the importance of robust security measures in the face of persistent cyber threats.
 
 ### Conclusion:
