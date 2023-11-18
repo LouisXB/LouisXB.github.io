@@ -26,7 +26,7 @@ Inside the VM, I employed a PowerShell script tailored to log failed RDP login a
 sample data, and appended all new failed logins below. Additionally, the Powershell script integrated with an IP Geolocation API to take the attackers IP addres and 
 provide the geolocations (city, longitude, latitude, etc.), adding it to the log data. This file became the cornerstone of my data collection.
 
-###Integration with Azure Analytics Workspace:
+### Integration with Azure Analytics Workspace:
 The VM was then integrated with Azure Log Analytics Workspace. Here, I created a custom MMA-based log, fed with the failed_rdp.log data, and provided a source path back to the failed_rdp.log 
 on the VM located at C:\ProgramData\Failed_rdp.log
 
