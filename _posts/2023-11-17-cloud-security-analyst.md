@@ -22,7 +22,7 @@ Given the VMs role as a honeypot, once logged in to it, I intentionally disabled
 exposed draws in attackers from all across the globe.
 
 ### Capturing Attack Data:
-Inside the VM, I employed a PowerShell script tailored to log failed RDP login attempts, storing this data in a file named failed_rdp.log. The Powershell script created a set of 
+Inside the VM, I employed a PowerShell script tailored to log failed RDP login attempts from Windows Event Viewer, storing this data in a file named failed_rdp.log. The Powershell script created a set of 
 sample data, and appended all new failed logins below. Additionally, the Powershell script integrated with an IP Geolocation API to take the attackers IP addres and 
 provide the geolocations (city, longitude, latitude, etc.), adding it to the log data. This file became the cornerstone of my data collection.
 
@@ -32,7 +32,7 @@ on the VM located at C:\ProgramData\Failed_rdp.log. I named this custom log FAIL
 
 ### Leveraging Azure Sentinel:
 The next phase involved connecting the VM to Azure Sentinel. This connection was crucial for retrieving the log data from the honeypot VM, providing 
-a streamlined data flow.
+a streamlined data flow and later mapping attacker's locations.
 
 ### Alert Rule Configuration:
 In Azure Sentinel, I configured a custom incident alert rule. This rule was designed to trigger notifications upon detecting issues related to failed credential access, 
