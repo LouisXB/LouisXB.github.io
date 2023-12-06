@@ -3,7 +3,7 @@
 In this blog I'll be detailing a recent project I completed using Microsoft Azure.
 
 ### Tools Used: 
-Azure Sentinel (SIEM), Log Analystics wWrkspace, Azure Virtual Machine, Powershell
+Azure Sentinel (SIEM), Log Analystics Workspace, Azure Virtual Machine, Powershell
 
 In the ever-evolving landscape of cybersecurity, understanding the tactics of threat actors is crucial. One innovative approach is the use of honeypots - decoy systems 
 designed to lure and analyze unauthorized access attempts. In this blog, I'll share my journey of creating a honeypot VM (Virtual Machine) in Microsoft Azure to capture 
